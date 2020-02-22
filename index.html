@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/index.css"/>
 </head>
 <body ng-controller="mainController" class="bg-dark">
 
@@ -33,9 +33,10 @@
 			<section id="intro" role="main" ng-show="view==0" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
 					<h1 id="title" class="display-3 text-dark">Grant Peterson</h1>
-					<p class="text-dark">Hello! my name is Grant Peterson, and i'm an RPI Computer Science and ITWS dual major looking to expand my skillset in frontend development.</p>
+					<p class="text-dark description">Hello! my name is Grant Peterson, and i'm an RPI Computer Science and ITWS dual major looking to expand my skillset in frontend development.</p>
 					<ul class="actions">
-						<li><a href="#one" class="btn btn-link text-dark">Learn more >></a></li>
+						<li><a href="#one" class="btn btn-link text-dark description">Learn more >></a></li>
+						<li><a href="public/gpeterson_CV.pdf" class="btn btn-link text-dark description">Resume >></a></li>
 					</ul>
 				</div>
 			</section>
@@ -43,17 +44,17 @@
 		  <div class="row separate">
 			<div class="col-md-4">
 			  <h2>Stock Dashboard</h2>
-			  <img class="img-fluid mb-4" src="css/images/stock.png">
+			  <img class="img-fluid mb-4" src="public/css/images/stock.png">
 			  <p><a class="btn btn-secondary"  href="stock/index.html" role="button">View details &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
 			  <h2>Pathfinder</h2>
-			  <img class="img-fluid mb-4" src="css/images/path.png">
-			  <p><a class="btn btn-secondary"  href="Pathfinder/build/index.html" role="button">View details &raquo;</a></p>
+			  <img class="img-fluid mb-4" src="public/css/images/path.png">
+			  <p><a class="btn btn-secondary"  href="Pathfinder/index.html" role="button">View details &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
 			  <h2>Weather App</h2>
-			  <img class="img-fluid mb-4" src="css/images/weather.png">
+			  <img class="img-fluid mb-4" src="public/css/images/weather.png">
 			  <p><a class="btn btn-secondary" href="WeatherApp/index.html" role="button">View details &raquo;</a></p>
 			</div>
 		  </div>
@@ -63,17 +64,17 @@
 			<div class="row separate">
 			  <div class="col-md-4">
 				<h2>jukebox</h2>
-				<img class="img-fluid mb-4" src="css/images/stock.png">
+				<img class="img-fluid mb-4" src="public/css/images/stock.png">
 				<p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
 			  </div>
 			  <div class="col-md-4">
 				<h2>Recipe Bazaar</h2>
-				<img class="img-fluid mb-4" src="css/images/path.png">
+				<img class="img-fluid mb-4" src="public/css/images/path.png">
 				<p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
 			  </div>
 			  <div class="col-md-4">
 				<h2>Weather App</h2>
-				<img class="img-fluid mb-4" src="css/images/weather.png">
+				<img class="img-fluid mb-4" src="public/css/images/weather.png">
 				<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
 			  </div>
 			</div>
@@ -93,5 +94,5 @@
 
     }]);
 </script>
-<script src="js/main.js"></script>
+<script src="public/js/main.js"></script>
 </html>
