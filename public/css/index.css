@@ -1,7 +1,4 @@
-html {
-  font-family: 'Merriweather', serif;
-}
-
+@import url(fontawesome-all.min.css);
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -92,7 +89,10 @@ main{
   width: 75%;
   float: right;
 }
-@import url(fontawesome-all.min.css);
+.dark {
+	font-size: .8em;
+	background-color: #222222;
+}
 
 /* Type */
 
