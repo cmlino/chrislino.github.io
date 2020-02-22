@@ -1,95 +1,97 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Grant Peterson</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<title>Grant Peterson</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<!-- Angular, bootstrap, and jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body ng-controller="mainController" class="bg-dark">
 
-		<!-- Header -->
-			<header id="header">
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a class="active" href="#intro">Welcome</a></li>
+					<li><a href="#one">Projects</a></li>
+					<li><a href="#two">Resume</a></li>
+					<li><a href="#three">Socials</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Intro -->
+			<section id="intro" role="main" ng-show="view==0" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Grant Peterson,</strong><br />
-					a web developer and <br />computer science student.</h1>
-				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Welcome to my portfolio, scroll down to view some of my recent projects.</h2>
-						</header>
-						<ul class="actions">
-							<li><a href="assets/gpeterson_CV.pdf" class="button">Resume</a></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="assets/css/images/thumbs/stock.png" alt="" /></a>
-								<h3>Stock Dashboard</h3>
-								<p>AngularJS application for vizualizing trading data.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="WeatherApp/index.html" class="image fit thumb"><img src="assets/css/images/thumbs/weather.png" alt="" /></a>
-								<h3>Weather App</h3>
-								<p>JavaScript/jQeury application to lookup the weather.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="Pathfinder/build/index.html" class="image fit thumb"><img src="assets/css/images/thumbs/path.png" alt="" /></a>
-								<h3>Pathfinding Visualizer</h3>
-								<p>React application for visualizing pathfinding algorithms.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="assets/css/images/thumbs/04.jpg" alt="" /></a>
-								<h3>Spotify Playlist Tool</h3>
-								<p>MEAN stack application for building unique spotify playlists.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="assets/css/images/thumbs/05.jpg" alt="" /></a>
-								<h3>Recipe Bazaar</h3>
-								<p>AMP stack social media app for sharing and reviewing recipes.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="assets/css/images/thumbs/06.jpg" alt="" /></a>
-								<h3>Sixth Project</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/grant-peterson-4119771a2" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://github.com/peterg4" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:gpeterson707@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<h1 id="title" class="display-3 text-dark">Grant Peterson</h1>
+					<p class="text-dark">Hello! my name is Grant Peterson, and i'm an RPI Computer Science and ITWS dual major looking to expand my skillset in frontend development.</p>
+					<ul class="actions">
+						<li><a href="#one" class="btn btn-link text-dark">Learn more >></a></li>
 					</ul>
 				</div>
-			</footer>
+			</section>
+		<div id="one">
+		  <div class="row separate">
+			<div class="col-md-4">
+			  <h2>Stock Dashboard</h2>
+			  <img class="img-fluid mb-4" src="css/images/stock.png">
+			  <p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+			  <h2>Pathfinder</h2>
+			  <img class="img-fluid mb-4" src="css/images/path.png">
+			  <p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+			  <h2>Weather App</h2>
+			  <img class="img-fluid mb-4" src="css/images/weather.png">
+			  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+			</div>
+		  </div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div class="projects">
+			<div class="row separate">
+			  <div class="col-md-4">
+				<h2>jukebox</h2>
+				<img class="img-fluid mb-4" src="css/images/stock.png">
+				<p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
+			  </div>
+			  <div class="col-md-4">
+				<h2>Recipe Bazaar</h2>
+				<img class="img-fluid mb-4" src="css/images/path.png">
+				<p><a class="btn btn-secondary"  href="#" role="button">View details &raquo;</a></p>
+			  </div>
+			  <div class="col-md-4">
+				<h2>Weather App</h2>
+				<img class="img-fluid mb-4" src="css/images/weather.png">
+				<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+			  </div>
+			</div>
+		  </div>
 
-	</body>
+	  </main>
+</body>
+
+<script>
+
+    var app = angular.module("myApp", []);
+
+    app.controller("mainController", ['$scope','$http',function($scope, $http) {
+
+        $scope.view = 0;
+		$scope.songs;
+
+    }]);
+</script>
+<script src="js/main.js"></script>
 </html>
