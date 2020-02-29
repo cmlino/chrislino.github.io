@@ -61,6 +61,14 @@ h1 {
 #sidebar > .inner {
   opacity: 1 !important;
 }
+.no-img{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/noimg.jpg);
+	height: 220px;
+	width: 700px;
+	background-position: center;
+	background-size: contain;
+
+}
 nav{
   margin: 0;
 	padding: 0;
