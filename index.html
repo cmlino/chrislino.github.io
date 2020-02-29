@@ -15,18 +15,31 @@
 </head>
 <body ng-controller="mainController" class="bg-dark">
 
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<li><a class="active" href="#intro">Welcome</a></li>
-					<li><a href="#one">Projects</a></li>
-					<li><a href="#two">Resume</a></li>
-					<li><a href="#three">Socials</a></li>
-				</ul>
-			</nav>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#"><img src="public/css/images/favicon.ico" height="27" width="27"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  	<a class="nav-link" href="#one">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#two">Resume</a>
+			  </li>
+			<li class="nav-item">
+				<a class="nav-link"  href="#three">Socials</a>
+			</li>
+		  </ul>
+			<form class="form-inline my-2 my-lg-0" ng-submit="login()">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Login">	
+			</form>
 		</div>
-	</section>
+	  </nav>
 
 <!-- Wrapper -->
 	<div id="wrapper">
