@@ -1,19 +1,13 @@
-(function($) {
+var app = angular.module("home", []);
 
-	var	$window = $(window),
-		$body = $('body'),
-		$sidebar = $('#sidebar');
-		if ($sidebar.length > 0) {
-			var $sidebar_a = $sidebar.find('a');
-			$sidebar_a
-				.addClass('scrolly')
-				.on('click', function() {
-					var $this = $(this);
-						$sidebar_a.removeClass('active');
-						$this.addClass('active').addClass('active-locked');
-						document.getElementById("one").scrollIntoView({ behavior: 'smooth', block: 'end' });
-
-				})
-		}
-
-})(jQuery);
+// Here is the Javascript for our controller which we linked (scoped) to the body tag
+app.controller("home-control", ['$scope','$http',function($scope, $http) {
+	$scope.view = 0;
+	$scope.one = 'active';
+	$scope.activate = function(){
+		$scope.one = "";
+		$scope.two = "active";
+		$scope.three = "";
+		$scope.four = "";
+	}
+}]);
