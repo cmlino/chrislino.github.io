@@ -23,16 +23,16 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item {{one}}">
-			  <a class="nav-link" href="#">Welcome<span class="sr-only">(current)</span></a>
+			  <a class="nav-link"  ng-click="activate2()" href="#">Welcome<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item {{two}}">
-			  	<a class="nav-link" ng-click="activate()"href="#one">Projects</a>
+			  	<a class="nav-link" ng-click="activate2()" href="#one">Projects</a>
 			</li>
 			<li class="nav-item {{three}}">
-				<a class="nav-link" href="#two">Resume</a>
+				<a class="nav-link" ng-click="activate3()" href="#three">Resume</a>
 			  </li>
 			<li class="nav-item {{four}}">
-				<a class="nav-link"  href="#three">Socials</a>
+				<a class="nav-link" ng-click="activate4()"href="#three">Socials</a>
 			</li>
 		  </ul>
 		</div>
@@ -68,9 +68,6 @@
 			  <p><a class="btn btn-link" href="WeatherApp/index.html" role="button">Demo &raquo;</a> <a class="btn btn-link"  href="https://github.com/peterg4" role="button">Github &raquo;</a></p>
 			</div>
 		  </div>
-		</div>
-
-		<div class="projects">
 			<div class="row separate">
 			  <div class="col-md-4">
 				<h2>jukebox</h2>
@@ -79,12 +76,12 @@
 			  </div>
 			  <div class="col-md-4">
 				<h2>Recipe Bazaar</h2>
-				<img class="img-fluid mb-4 no-img">
+				<div class="img-fluid mb-4 no-img"></div>
 				<p><a class="btn btn-link"  href="https://github.com/peterg4" role="button">Github &raquo;</a></p>
 			  </div>
 			  <div class="col-md-4">
 				<h2>Weather App</h2>
-				<img class="img-fluid mb-4 no-img">
+				<div class="img-fluid mb-4 no-img"></div>
 				<p><a class="btn btn-link"  href="https://github.com/peterg4" role="button">Github &raquo;</a></p>
 			  </div>
 			</div>
