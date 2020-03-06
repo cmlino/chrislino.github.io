@@ -1,10 +1,9 @@
 body{
     background-color: #333333;
-    background-blend-mode: multiply;
     color: ivory;
 }
 #chart_div{
-    width: 80%;
+    width: 70%;
     min-height: 500px;
     margin: 0 auto;
 }
@@ -31,4 +30,8 @@ input[type=text] {
         width: 100%;
         flex-basis: 100%;
     }
+}
+.container1{
+    width: 20%;
+    margin: 0 auto;
 }
