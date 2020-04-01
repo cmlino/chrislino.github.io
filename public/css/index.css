@@ -85,7 +85,7 @@ main{
 }
 .dark {
 	font-size: .8em;
-	background-color: #222222;
+	background-color: #111111;
 }			
 .wrapper.fullscreen {
 	display: flex;
