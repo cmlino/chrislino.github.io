@@ -40,7 +40,7 @@ h1 {
 #title{
 	width: fit-content;
 	margin: 0 auto;
-  font-size: 2.5em;
+  font-size: 3.2em;
   animation: fadeIn 5s ease 1;
   text-align: left;
   color: #f5f5f5 !important;
@@ -112,7 +112,7 @@ svg:not(:root).svg-inline--fa {
 	width: 0.875em;
 }
 .fa-2x {
-	font-size: 2em;
+	font-size: 2em!important;
 }
 .svg-inline--fa {
 	display: inline-block;
