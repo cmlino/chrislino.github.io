@@ -3,7 +3,7 @@ p5.disableFriendlyErrors = true; // disables FES
 function setup() {
   var can = createCanvas(600, 600);
   can.parent('sketch');
-  frameRate(30);
+  frameRate(15);
 }
 let depth = 100;
 function draw() {
