@@ -15,38 +15,10 @@
 </head>
 <body ng-controller="home-control" class="bg-dark">
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top dark">
-		<a class="navbar-brand" href="#"><img src="public/css/images/favicon.ico" height="27" width="27"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item {{one}}">
-			  <a class="nav-link"  ng-click="activate1()" href="#">Welcome<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item {{two}}">
-			  	<a class="nav-link" ng-click="activate2()" href="#one">Projects</a>
-			</li>
-			<li class="nav-item {{three}}">
-				<a class="nav-link" ng-click="activate3()" href="#three">Resume</a>
-			  </li>
-			<li class="nav-item {{four}}">
-				<a class="nav-link" ng-click="activate4()"href="#three">Socials</a>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
-
 	<div id="wrapper">
 			<section id="intro" role="main" ng-show="view==0" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
 					<h1 id="title" class="display-3 text-dark">Grant Peterson</h1>
-					<p class="text-dark description">Hello! my name is Grant Peterson, i'm a Computer Science and ITWS dual major at RPI working to expand my skillset in frontend development.</p>
-					<ul class="actions">
-						<li><a href="#one" class="btn btn-link text-dark description">Projects &raquo;</a></li>
-						<li><a href="public/gpeterson_CV.pdf" class="btn btn-link text-dark description">Resume &raquo;</a></li>
-					</ul>
 				</div>
 			</section>
 		<div id="one">
