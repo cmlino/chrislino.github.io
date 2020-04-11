@@ -33,9 +33,10 @@ function draw() {
 
       box(w, h, w);
       //rect(x,0,10,h); 
-      
+    
       pop()
     }
   }
+  noLoop();
   angle += 0.065;
 }
