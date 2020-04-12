@@ -30,7 +30,6 @@ function branch(length, angle, w, f) {
     return;
   }
   line(0,0,0,-length);
-  //drawLine(0,0,0,-length); //make a function to animate the line drawing process
   translate(0,-length);
   if(length > depth && length > 4) {
     if(w > 1)

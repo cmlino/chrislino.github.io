@@ -12,12 +12,12 @@ html, body, div, h1, h2, h3 {
 canvas {
 	display: block;
   margin: 20px auto;
-  margin-top: -146px;
+	margin-top: -146px;
 }
 canvas:before {
 	width: 400px;
 	height: 400px;
-  margin-top: -146px;
+	margin-top: -146px;
 }
 img{
 	border-radius: 1px;
@@ -86,6 +86,10 @@ border-radius: 0;
 }
 #intro p {
 	font-size: 1.25em;
+}
+p { 
+	text-align: center;
+	margin-top: 22px;
 }
 .scroll-button{
 	animation: blink 1s infinite alternate, fadeIn 4.5s ease 1;
@@ -156,6 +160,7 @@ footer {
 	border: 0px;
 	background-color: #151515;
 	border: 1px solid #666;
+	border-radius: 0px;
 }
 .card h2{
 	text-align: center;
@@ -165,6 +170,7 @@ footer {
 	font-weight: 100;
 }
 .ico {
+	margin: 3px;
 	height:50px;
 	width: 50px;
 	display: inline-block;
@@ -192,6 +198,20 @@ footer {
 .mongo{
 	filter: invert(54%) sepia(8%) saturate(4076%) hue-rotate(72deg) brightness(100%) contrast(65%);
 }
+.btn-link{
+	border-radius: 0px;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	border: 1px solid;
+}
+.btn-link:hover{
+	font-weight: 400;
+	color: #222222;
+	background-color: #f5f5f5;
+	text-decoration: none;
+	border: 1px solid black;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -216,6 +236,7 @@ footer {
 
   }
 }
+
 @media screen and (max-width: 800px) {
 	.column {
 			flex: 50%;
