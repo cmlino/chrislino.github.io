@@ -15,7 +15,7 @@ function draw() {
   translate(300,height)
   stroke(255/*,frameCount*3*/);
   branch(100, angle, 6, fc);
-  if(frameCount >= 100) {
+  if(frameCount >= 97) {
     noLoop();
   //  saveCanvas('myCanvas', 'png');
   }
