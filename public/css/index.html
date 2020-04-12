@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="home">
+	<title>Grant Peterson</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<!-- Angular, bootstrap, and jquery -->
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ea40360b7c.js"></script>
+	<script src="public/js/sketch.js"></script>
+	<link rel="stylesheet" type="text/css" href="public/css/index.css"/>
+	<link rel="icon" type="image/png" href="public/css/images/favicon.png">
+</head>
+<body ng-controller="home-control" class="bg-dark">
+
+	<div id="wrapper">
+			<section id="intro" role="main" ng-show="view==0" class="wrapper style1 fullscreen fade-up">
+				<div class="inner">
+					<div id="sketch"></div>
+					<h1 id="title" class="display-3 text-dark">Grant Peterson</h1>
+					<h2 id="subtitle">Student / Software Engineer</h2>
+					<button aria-label="Scroll button" class="scroll-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></button>
+				</div>
+			</section>
+		<div id="projects">
+			<div class="row">
+
+				<div class="card">
+					<h2>Jukebox</h2>
+					<img class="img-fluid mb-4" src="public/css/images/jukebox.png">
+					<div class="ico-container">
+						<img class="ico" src="public/css/images/angular.svg">
+						<img class="ico" src="public/css/images/react.svg">
+					</div>
+					<p><a class="btn btn-link"  href="https://github.com/peterg4" role="button">Github &raquo;</a></p>
+				</div>
+
+				<div class="card">
+					<h2>TFT Tracker</h2>
+					<img class="img-fluid mb-4" src="public/css/images/tft.png">
+					<p><a class="btn btn-link"  href="https://github.com/peterg4/TFTtracker" role="button">Github &raquo;</a></p>
+				</div>
+
+				<div class="card">
+					<h2>Pathfinder</h2>
+					<img class="img-fluid mb-4" src="public/css/images/path.png">
+					<p><a class="btn btn-link"  href="https://github.com/peterg4/Pathfinder" role="button">Github &raquo;</a></p>
+				</div>
+
+				<div class="card">
+					<h2>Sorting Visualizer</h2>
+					<img class="img-fluid mb-4" src="public/css/images/sorter.png">
+					<p><a class="btn btn-link"  href="https://github.com/peterg4/Sorting-Visualizer" role="button">Github &raquo;</a></p>
+				</div>
+
+
+
+				<div class="card">
+					<h2>Weather App</h2>
+					<img class="img-fluid mb-4" src="public/css/images/weather.png">
+					<p><a class="btn btn-link" href="WeatherApp/index.html" role="button">Demo &raquo;</a> <a class="btn btn-link"  href="https://github.com/peterg4/WeatherApp" role="button">Github &raquo;</a></p>
+				</div>
+
+				<div class="card">
+					<h2>Stock Dashboard</h2>
+					<img class="img-fluid mb-4" src="public/css/images/stock.png">
+					<p><a class="btn btn-link"  href="stock/index.html" role="button">Demo &raquo;</a> <a class="btn btn-link"  href="https://github.com/peterg4/Stock-Dashboard" role="button">Github &raquo;</a></p>
+				</div>
+
+			</div>
+		</div>
+	  </main>
+</body>
+<footer class="page-footer font-small">
+	<div id="three">
+		<div class="footer-copyright text-center">
+			<a href="https://github.com/peterg4"><i class="fa fa-github fa-3x"></i></a> 	<a href="linkedin.com/in/grant-peterson-4119771a2"><i class="fa fa-linkedin fa-3x"></i></a> 	<a href="mailto:gpeterson707@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+		</div>
+	</div>
+</footer>
+
+<script src="public/js/main.js"></script>
+</html>
