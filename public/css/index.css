@@ -79,13 +79,18 @@ border-radius: 0;
 	font-size: 1.25em;
 }
 .scroll-button{
-	animation: blink 1s infinite alternate;
+	animation: blink 1s infinite alternate, fadeIn 5s ease 1;
 	background-color: transparent;
 	border: none;
 	color: #f5f5f5;
 	cursor: pointer;
 	margin: .5em  auto;
 	width: 100%;
+}
+.fa-4x{
+	color: #f5f5f5;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 svg:not(:root).svg-inline--fa {
 	overflow: visible;
@@ -107,11 +112,15 @@ svg:not(:root).svg-inline--fa {
 	outline: 0px!important;
 }
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  90% {
+    opacity: 0;
+
+	}
+	100% {
     opacity: 1;
 
   }
