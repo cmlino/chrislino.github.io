@@ -213,6 +213,9 @@ footer {
 	text-decoration: none;
 	border: 1px solid black;
 }
+.fa-3x:hover{
+	color: #61dbfb;
+}
 @keyframes fadeIn {
   0% {
 		opacity: 0;
