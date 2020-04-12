@@ -51,6 +51,14 @@ h1 {
   text-align: left;
   color: #f5f5f5 !important;
 }
+#subtitle{
+	width: fit-content;
+	margin: 0 auto;
+  font-size: 1.5em;
+  animation: fadeIn 6s ease 1;
+  text-align: left;
+  color: #f5f5f5 !important;
+}
 main{
   width: 75%;
   float: right;
@@ -80,7 +88,7 @@ border-radius: 0;
 	font-size: 1.25em;
 }
 .scroll-button{
-	animation: blink 1s infinite alternate, fadeIn 5s ease 1;
+	animation: blink 1s infinite alternate, fadeIn 6s ease 1;
 	background-color: transparent;
 	border: none;
 	color: #f5f5f5;
