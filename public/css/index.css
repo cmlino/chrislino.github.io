@@ -101,6 +101,7 @@ p {
 	width: 100%;
 }
 .fa-3x{
+	font-size: 30px;
 	color: #f5f5f5;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -214,16 +215,14 @@ footer {
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+		opacity: 0;
   }
 
   90% {
-    opacity: 0;
-
+		opacity: 0;
 	}
 	100% {
-    opacity: 1;
-
+		opacity: 1;
   }
 }
 @keyframes blink {
