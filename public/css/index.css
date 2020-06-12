@@ -9,7 +9,7 @@ html, body, div, h1, h2, h3 {
 	scroll-behavior: smooth;
 	font-family: 'Open Sans', sans-serif;
 }
-canvas {
+/* canvas {
 	display: block;
   margin: 20px auto;
 	margin-top: -146px;
@@ -18,7 +18,7 @@ canvas:before {
 	width: 400px;
 	height: 400px;
 	margin-top: -146px;
-}
+} */
 img{
 	border-radius: 1px;
 	width: 500px;
@@ -44,6 +44,10 @@ h1 {
   text-align: center;
 }
 #title{
+	position: absolute;
+	top: 64%;
+	left: 50%;
+	transform: translateX(-50%);
 	width: fit-content;
 	margin: 0 auto;
   font-size: 3.2em;
@@ -52,12 +56,16 @@ h1 {
   color: #f5f5f5 !important;
 }
 #subtitle{
-	width: fit-content;
-	margin: 0 auto;
-  font-size: 1.5em;
-  animation: fadeIn 4.5s ease 1;
-  text-align: left;
-  color: #f5f5f5 !important;
+	position: absolute;
+	top: calc(64% + 60px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+#scroll-button{
+	position: absolute;
+	top: calc(64% + 105px);
+	left: 50%;
+	transform: translateX(-50%);
 }
 .slowFade{
 	animation: fadeIn 4.5s ease 1;
@@ -247,16 +255,15 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
-	.column {
-			flex: 50%;
-			max-width: 50%;
-	}
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1168px) {
 	.column {
 			flex: 100%;
-			max-width: 100%;
+			max-width: 90%;
+	}
+	.card{
+		width: 100%;
+	}
+	img{
+		width: 100%;
 	}
 }
