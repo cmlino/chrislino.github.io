@@ -211,6 +211,9 @@ footer {
 .mongo{
 	filter: invert(54%) sepia(8%) saturate(4076%) hue-rotate(72deg) brightness(100%) contrast(65%);
 }
+.tensorflow{
+	filter: invert(58%) sepia(89%) saturate(713%) hue-rotate(359deg) brightness(101%) contrast(105%);
+}
 .btn-link{
 	border-radius: 0px;
 	font-weight: 400;
