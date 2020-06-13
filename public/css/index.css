@@ -266,4 +266,13 @@ footer {
 	img{
 		width: 100%;
 	}
+	#title{
+		top: 70%;
+	}
+	#subtitle{
+		top: calc(70% + 60px);
+	}
+	#scroll-button{
+		top: calc(70% + 105px);
+	}
 }
