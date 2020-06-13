@@ -1,7 +1,7 @@
 p5.disableFriendlyErrors = true; // disables FES
 
 function setup() {
-  var can = createCanvas(windowWidth-20, windowHeight);
+  var can = createCanvas(document.documentElement.clientWidth, document.documentElement.clientHeight);
   can.parent('sketch');
   frameRate(30);
 }
@@ -25,7 +25,7 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth-20, windowHeight);
+  resizeCanvas(document.documentElement.clientWidth, document.documentElement.clientHeight);
 }
 
 
