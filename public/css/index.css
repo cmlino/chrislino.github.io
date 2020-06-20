@@ -9,16 +9,6 @@ html, body, div, h1, h2, h3 {
 	scroll-behavior: smooth;
 	font-family: 'Open Sans', sans-serif;
 }
-/* canvas {
-	display: block;
-  margin: 20px auto;
-	margin-top: -146px;
-}
-canvas:before {
-	width: 400px;
-	height: 400px;
-	margin-top: -146px;
-} */
 img{
 	border-radius: 1px;
 	width: 500px;
@@ -226,7 +216,7 @@ footer {
 	color: #222222;
 	background-color: #f5f5f5;
 	text-decoration: none;
-	border: 1px solid black;
+	border: 1px solid #f5f5f5;
 }
 .fa-3x:hover{
 	color: #61dbfb;
