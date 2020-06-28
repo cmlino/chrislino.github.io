@@ -1,50 +1,35 @@
 AOS.init();
 
-tippy('.spotify', {
+tippy.setDefaultProps({
+	delay: 50,
 	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "Spotify Web API",
-	allowHTML: true,
+	trigger: 'mouseenter focus'
+});
+
+tippy('.spotify', {
+	content: "Spotify Web API"
 });
 
 tippy('.angularjs', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "AngularJS",
-	allowHTML: true,
+	content: "AngularJS"
 });
 
 tippy('.bootstrap', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "Bootstrap",
-	allowHTML: true,
+	content: "Bootstrap"
 });
 
 tippy('.node', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "Node.js",
-	allowHTML: true,
+	content: "Node.js"
 });
 
 tippy('.mongo', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "MongoDB",
-	allowHTML: true,
+	content: "MongoDB"
 });
 
 tippy('.react', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "React.js",
-	allowHTML: true,
+	content: "React.js"
 });
 
 tippy('.tensorflow', {
-	content: 'Global content',
-	trigger: 'mouseenter focus',
-	content: "TensorFlow",
-	allowHTML: true,
+	content: "TensorFlow"
 });
