@@ -14,6 +14,6 @@ tippy('.mongo', {content: "MongoDB"});
 tippy('.react', {content: "React.js"});
 tippy('.tensorflow', {content: "TensorFlow"});
 tippy('.fa-github', {delay: 250, content: "Github"});
-tippy('.fa-linkedin', {delay: 250, content: "Linkedin"});
+tippy('.fa-linkedin', {delay: 250, content: "LinkedIn"});
 tippy('.fa-envelope', {delay: 250, content: "gpeterson707@gmail.com"});
 tippy('.fa-file', {delay: 250, content: "Resume"});
