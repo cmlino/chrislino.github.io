@@ -90,7 +90,7 @@ border-radius: 0;
 }
 p { 
 	text-align: center;
-	margin-top: 22px;
+	margin-top: 10px;
 }
 .scroll-button{
 	animation: blink 1s infinite alternate, fadeIn 4.5s ease 1;
