@@ -10,7 +10,6 @@ let depth = 100;
 function draw() {
   
   let angle = PI/6;
-  background(34);
   clear();
   translate(width/2,height/1.6)
   stroke(255/*,frameCount*3*/);
