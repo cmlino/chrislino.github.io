@@ -41,7 +41,7 @@ h1 {
 	width: fit-content;
 	margin: 0 auto;
   font-size: 3.2em;
-  animation: fadeIn 3.5s ease 1;
+  animation: fadeIn 1.8s ease 1;
   text-align: left;
   color: #f5f5f5 !important;
 }
@@ -58,7 +58,7 @@ h1 {
 	transform: translateX(-50%);
 }
 .slowFade{
-	animation: fadeIn 4.5s ease 1;
+	animation: fadeIn 2.5s ease 1;
 }
 main{
   width: 75%;
@@ -93,7 +93,7 @@ p {
 	margin-top: 10px;
 }
 .scroll-button{
-	animation: blink 1s infinite alternate, fadeIn 4.5s ease 1;
+	animation: blink 1s infinite alternate, fadeIn 2.5s ease 1;
 	background-color: transparent;
 	border: none;
 	color: #f5f5f5;

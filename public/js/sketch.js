@@ -21,7 +21,7 @@ function draw() {
   //  saveCanvas('myCanvas', 'png');
   }
   depth*=.75;
-  fc+=4;
+  fc+=6;
 }
 
 function windowResized() {
