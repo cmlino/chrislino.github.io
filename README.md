@@ -1,6 +1,5 @@
-# peterg4.github.io
+# cmlino.github.io
 Personal Portfolio
 
-This is my personal portfolio with some of my recent web projects, it was built with AngularJS, and the p5.js library 
-
-[peterg4.github.io](https://peterg4.github.io/)
+This is my personal portfolio with some of my recent technical writing samples.
+Forked from [peterg4.github.io](https://peterg4.github.io/)
