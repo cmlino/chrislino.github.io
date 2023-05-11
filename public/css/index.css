@@ -9,27 +9,73 @@ html, body, div, h1, h2, h3 {
 	scroll-behavior: smooth;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.grid-container-element { 	
+    display: grid; 
+    grid-template-columns: .40fr 1fr; 
+    grid-gap: 10px;
+    width: 100%; 
+	background-color: #Fffef2;
+} 
+
+.grid-child-1 { 
+    margin: 10px; 
+    border: 0px solid black; 
+}
+
+.grid-child-1 p {
+	text-align: right;
+}
+
+.grid-child-1 h1 {
+	font-weight: bold;
+	font-size: 30pt;
+	float: right;
+}
+
+.grid-child-2 {
+	margin: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border: 2px solid black;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: pt;
+}
+
+a {
+	color: black;
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+  }
+
 img{
 	border-radius: 1px;
 	width: 500px;
 }
+
 .container{
-  background-color: #222222;
+  background-color: #Fffef2;
   margin: 0 0 0 0;
   width: 100%;
 }
 #projects{
   margin: 0 0 0 0;
   padding: 30px 100px;
-  color: #666666;
-  background-color: #111111;
+  color: #111111;
+  background-color: #Fffef2;
 }
 .projects{
 	margin: 0 0 0 0;
 	padding: 30px 100px;
-	color: #666666;
-	background-color: #111111;
+	color: #111111;
+	background-color: #Fffef2;
 }
+
 h1 {
   text-align: center;
 }
@@ -43,7 +89,7 @@ h1 {
   font-size: 6em;
   animation: fadeIn 1s ease 1;
   text-align: left;
-  color: #f5f5f5 !important;
+  color: #111111 !important;
 }
 #subtitle{
 	position: absolute;
@@ -57,9 +103,7 @@ h1 {
 	left: 50%;
 	transform: translateX(-50%);
 }
-.slowFade{
-	animation: fadeIn 2.5s ease 1;
-}
+
 main{
   width: 75%;
   float: right;
@@ -92,18 +136,10 @@ p {
 	text-align: center;
 	margin-top: 10px;
 }
-.scroll-button{
-	animation: blink 1s infinite alternate, fadeIn 2.5s ease 1;
-	background-color: transparent;
-	border: none;
-	color: #f5f5f5;
-	cursor: pointer;
-	margin: .5em  auto;
-	width: 100%;
-}
+
 .fa-3x{
 	font-size: 30px!important;
-	color: #f5f5f5;
+	color: #111111;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -124,7 +160,7 @@ svg:not(:root).svg-inline--fa {
 	vertical-align: -0.125em;
 }
 footer {
-	background-color: #222222;
+	background-color: #Fffef2;
 	padding: 10px;
 }
 :focus{
@@ -151,7 +187,7 @@ footer {
 }
 
 .text {
-	color: white;
+	color: black;
 	font-size: 16px;
 	line-height: 30px;
 	padding: 0px 11px;
@@ -161,13 +197,13 @@ footer {
 	margin: 25px auto;
 	width: 500px;
 	border: 0px;
-	background-color: #151515;
-	border: 1px solid #666;
+	background-color: #Fffef2;
+	/*border: 1px solid #666;*/
 	border-radius: 0px;
 }
 .card h2{
 	text-align: center;
-	color: #f5f5f5;
+	color: #111111;
 	padding: 15px;
 	font-size: 1.5em;
 	font-weight: 100;
@@ -225,7 +261,7 @@ footer {
 	color: #61dbfb;
 }
 .blurb{
-	color: #f5f5f5;
+	color: #111111;
 	padding: 0px 25px 10px 25px;
 }
 @keyframes fadeIn {
@@ -251,6 +287,44 @@ footer {
   }
 }
 
+/* The sidebar menu */
+.sidenav {
+	width: 160px; /* Set the width of the sidebar */
+	/*position: fixed; Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 20px; /* Stay at the top */
+	left: 10px;
+	background-color: #Fffef2; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+  }
+
+  .sidenav h1 {
+	font-weight: bold;
+	font-size: 25pt;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #111111;
+	display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  /*.sidenav a:hover {
+	/*color: #7e7e7e;
+  /*}
+  
+  /* Style page content */
+  .main {
+	margin-left: 160px; /* Same as the width of the sidebar */
+	padding: 0px 10px;
+  }
+  
+
 @media screen and (max-width: 1168px) {
 	.column {
 			flex: 100%;
@@ -272,3 +346,9 @@ footer {
 		top: calc(70% + 105px);
 	}
 }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }

@@ -14,61 +14,33 @@
 	<link rel="icon" type="image/png" href="public/css/images/favic.png">
 </head>
 <body class="bg-dark">
-
+	
 	<div id="wrapper">
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
-					<h1 id="title" class="display-3 text-dark">Chris Lino</h1>
-					<footer id="subtitle" class="page-footer font-small slowFade">
-						<div id="three">
-							<div class="footer-copyright text-center">
-								<a href="https://github.com/cmlino"><i class="fa fa-github fa-3x"></i></a>
-								<a href="https://www.linkedin.com/in/chrislino"><i class="fa fa-linkedin fa-3x"></i></a> 
-								<a href="mailto:cmlino@protonmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-								<a href="public/clino_resume.pdf"><i class="fa fa-file fa-3x"></i></a>
-							</div>
-						</div>
-					</footer>
-					<button id="scroll-button" aria-label="Scroll button" onclick="window.location.href = '#projects'" class="scroll-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></button>
-				</div>
-			</section>
+		<div class="grid-container-element">
+			<div class="grid-child-1" style="text-align:right">
+				<h1>Chris Lino</h1>
+				<!--<p> Hello! I'm Chris, and I write technical content for controllers, drives, and motors at Kollmorgen. I've written documentation for a few different projects. Check out some of my work while you're here. </p>-->
+				<a href="https://cmlino.github.io/pdf/resume.pdf">Resume</a> </br>
+				<a href="https://www.linkedin.com/in/chrislino/">LinkedIn</a> </br>
+				<a href="https://github.com/cmlino/">GitHub</a> 
+			</div>
+			<div class="grid-child-2" style="text">
+				<h2>Featured</h2>
+				<a href ="'https:\/\/cmlino.github.io/pdf/safety_parameters.pdf"> AKD2G </a> </br>
+				<a href ="'https:\/\/cmlino.github.io/pdf/safety_parameters.pdf"> text </a> </br>
+				<a href ="'https:\/\/cmlino.github.io/pdf/safety_parameters.pdf"> text </a> </br>
+			</div>
+		</div>
 		<div id="projects">
-			<div class="row">
+			<div class="column">
+			<h2>Archive</h2>
+				<div class="card" data-aos-delay="0">
+					<a href="'https:\/\/cmlino.github.io/pdf/safety_parameters.pdf'">AKD2G Help &#183; Kollmorgen</a>
+					
+					<a href="'https:\/\/cmlino.github.io/pdf/style_guide.pdf'">Style Guide &#183; PathAI </a>
+					
 
-				<div class="card" data-aos="fade-down" data-aos-delay="0">
-					<h2>AKD2G Help &#183; Kollmorgen</h2>
-					<img class="img-fluid mb-4" src="public/css/images/parameters.PNG" onclick="window.location.href = 'https:\/\/cmlino.github.io/pdf/safety_parameters.pdf'">
-					<!-- <div class="ico-container">
-						<img class="ico tensorflow" src="public/css/images/quacs.PNG">
-					</div>-->
-					<p><a class="btn btn-link"  href="https://cmlino.github.io/pdf/safety_parameters.pdf" role="button">PDF &raquo;</a></p>
-					<p class="blurb">This is a sample of web help written for WorkBench, Kollmorgen’s graphical user interface for programming drives and motors. These clear and concise instructions outline different methods for downloading safety parameters to an AKD2G drive. The writing is geared towards engineers.</p>
-				</div>
-
-				<div class="card" data-aos="fade-down" data-aos-delay="100">
-					<h2>Style Guide &#183; PathAI</h2>
-					<img class="img-fluid mb-4" src="public/css/images/style_guide.PNG" onclick="window.location.href = 'https:\/\/cmlino.github.io/pdf/style_guide.pdf'">
-					<!--<div class="ico-container">
-						<img class="ico angularjs" src="public/css/images/angularjs.svg">
-						<img class="ico bootstrap" src="public/css/images/bootstrap.svg">
-						<img class="ico node" src="public/css/images/node-dot-js.svg">
-						<img class="ico spotify" src="public/css/images/spotify.svg">
-					</div>-->
-					<p><a class="btn btn-link"  href="https://fluxdj.herokuapp.com" role="button">PDF&raquo;</a></p>
-					<p class="blurb">This sample served as a style guide written for the PathAI technical writing department. This guide established standards for technical communications at PathAI, ensuring consistency and clarity across all written materials. </p>
-				</div>
-
-				<div class="card" data-aos="fade-down" data-aos-delay="200">
-					<h2>User Guide &#183; QuACS</h2>
-					<img class="img-fluid mb-4" src="public/css/images/quacs.PNG" onclick="window.location.href = 'https:\/\/cmlino.github.io/pdf/quacs_guide.pdf'">
-					<!--- <div class="ico-container">
-						<img class="ico angularjs" src="public/css/images/angularjs.svg">
-						<img class="ico bootstrap" src="public/css/images/bootstrap.svg">
-						<img class="ico node" src="public/css/images/node-dot-js.svg">
-						<img class="ico mongo" src="public/css/images/mongodb.svg">
-					</div> -->
-					<p><a class="btn btn-link"  href="https://cmlino.github.io/pdf/quacs_guide.pdf" role="button">PDF&raquo;</a></p>
-					<p class="blurb">The QuACS user guide was written for an RPI course scheduler. The guide provides instructions and information about QuACS, and it aims to help students navigate and utilize the software effectively.</p>
+					<a href="'https:\/\/cmlino.github.io/pdf/quacs_guide.pdf'"></a>
 				</div>
 			</div>
 		</div>
@@ -77,8 +49,8 @@
 <footer class="page-footer font-small">
 	<div id="three">
 		<div class="footer-copyright text-center">
-			<a href="https://github.com/peterg4"><i class="fa fa-github fa-3x"></i></a>
-			<a href="https://linkedin.com/in/grant-peterson-4119771a2"><i class="fa fa-linkedin fa-3x"></i></a> 
+			<a href="https://github.com/cmlino"><i class="fa fa-github fa-3x"></i></a>
+			<a href="https://www.linkedin.com/in/chrislino/"><i class="fa fa-linkedin fa-3x"></i></a> 
 			<a href="mailto:cmlino@protonmail.com"><i class="fa fa-envelope fa-3x"></i></a>
 			<a href="public/clino_resume.pdf"><i class="fa fa-file fa-3x"></i></a>
 		</div>
